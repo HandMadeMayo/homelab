@@ -1,0 +1,78 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Media:
+    - Plex:
+        href: "http://192.168.0.17:32400"
+        description: Media Library
+        icon: plex.png
+        widget:
+          type: plex
+          url: http://192.168.0.17:32400
+          key: {{HOMEPAGE_VAR_PLEX_KEY}}
+    - Tautulli:
+        href: "http://192.168.0.17:8181"
+        description: Media Server Monitoring
+        icon: tautulli.png
+        widget:
+          type: tautulli
+          url: http://192.168.0.17:8181
+          key: {{HOMEPAGE_VAR_TAUTULLI_KEY}}
+          enableUser: true # optional, defaults to false
+          showEpisodeNumber: true # optional, defaults to false
+          expandOneStreamToTwoRows: true # optional, defaults to true
+        
+
+- Containers and Services:
+    - Portainer hmmpi1:
+        href: https://192.168.0.5:9443
+        description: Used for home services
+        icon: portainer.png
+        widget:
+          type: portainer
+          url: https://192.168.0.5:9443
+          env: 2
+          key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+    - Portainer hmmpi2:
+        href: https://192.168.0.5:9443
+        description: Used for network services
+        icon: portainer.png
+        widget:
+          type: portainer
+          url: https://192.168.0.5:9443
+          env: 5
+          key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+    - Portainer MediaPC:
+        href: https://192.168.0.5:9443
+        description: MediaPC Environment
+        icon: portainer.png
+        widget:
+          type: portainer
+          url: https://192.168.0.5:9443
+          env: 4
+          key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+    - Minecraft Server:
+        icon: minecraft.png
+        widget:
+          type: minecraft
+          url: udp://192.168.0.17:25565
+    - Plane:
+        href: http://192.168.0.5:12800
+        description: Scrum Management
+        icon: plane.svg
+
+
+- Networking:
+    - Router:
+        href: http://192.168.0.1
+        description: TP-Link AX-5400
+        icon: tp-link.png
+    - PiHole:
+        href: http://192.168.0.6:8080
+        description: Recursive DNS Server
+        icon: pi-hole.png
+        widget:
+          type: pihole
+          url: http://192.168.0.6:8080
+          key: {{HOMEPAGE_VAR_PIHOLE_KEY}}

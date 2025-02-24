@@ -1,0 +1,28 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+title: Control Yo Shit!
+
+favicon: https://cdn-icons-png.flaticon.com/512/2688/2688244.png
+
+background:
+  image: https://w.wallhaven.cc/full/ex/wallhaven-exk2g8.jpg
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
+
+theme: dark
+
+color: slate
+
+headerStyle: clean
+
+hideVersion: true
+
+showStats: true
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
