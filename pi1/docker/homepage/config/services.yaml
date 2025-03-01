@@ -22,6 +22,15 @@
           enableUser: true # optional, defaults to false
           showEpisodeNumber: true # optional, defaults to false
           expandOneStreamToTwoRows: true # optional, defaults to true
+    - Kavita:
+        href: "http://192.168.0.17:5000"
+        description: eBook Library
+        icon: kavita.png
+        widget:
+          type: kavita
+          url: "http://192.168.0.17:5000"
+          username: {{HOMEPAGE_VAR_KAVITA_USERNAME}}
+          password: {{HOMEPAGE_VAR_KAVITA_PASSWORD}}
         
 
 - Containers and Services:
