@@ -2,7 +2,3 @@
 *.sql
 *.sqlite
 *.env
-*.tfstate
-*.tfstate.backup
-.terraform/
-*.terraform*
