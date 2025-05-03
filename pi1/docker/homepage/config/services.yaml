@@ -31,12 +31,6 @@
           url: "http://192.168.0.17:5000"
           username: {{HOMEPAGE_VAR_KAVITA_USERNAME}}
           password: {{HOMEPAGE_VAR_KAVITA_PASSWORD}}
-    - OctoPrint Stream:
-        id: stream
-        widget:
-          type: mjpeg
-          stream: http://192.168.0.8/webcam/?action=stream
-
         
 
 - Containers and Services:
@@ -72,14 +66,6 @@
         widget:
           type: minecraft
           url: udp://192.168.0.17:25565
-    - OctoPrint:
-        href: http://192.168.0.8
-        icon: octoprint.png
-        description: 3D Print Manager
-        widget:
-          type: octoprint
-          url: http://192.168.0.8:80
-          key: {{HOMEPAGE_VAR_OCTOPRINT_KEY}}
     - Plane:
         href: http://192.168.0.5:12800
         description: Scrum Management
