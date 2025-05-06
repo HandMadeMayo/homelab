@@ -31,6 +31,14 @@
           url: "http://192.168.0.17:5000"
           username: {{HOMEPAGE_VAR_KAVITA_USERNAME}}
           password: {{HOMEPAGE_VAR_KAVITA_PASSWORD}}
+    - AudioBookShelf:
+        href: "http://192.168.0.17:13378"
+        description: Audiobook Library
+        icon: audiobookshelf.png
+        widget:
+          type: audiobookshelf
+          url: "http://192.168.0.17:13378/"
+          key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
         
 
 - Containers and Services:
